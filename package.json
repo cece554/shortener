@@ -2,10 +2,12 @@
   "name": "eleventy-base-blog",
   "version": "5.0.0",
   "description": "A starter repository for a blog web site using the Eleventy static site generator.",
+  "baseUrl": "thatsreallygood.design",
   "scripts": {
     "build": "npx eleventy",
     "watch": "npx eleventy --watch",
-    "debug": "DEBUG=* npx eleventy"
+    "debug": "DEBUG=* npx eleventy",
+    "shorten": "netlify-shortener"
   },
   "repository": {
     "type": "git",
@@ -27,6 +29,7 @@
     "@11ty/eleventy-plugin-syntaxhighlight": "^2.0.0",
     "luxon": "^1.0.0",
     "markdown-it": "^8.4.1",
-    "markdown-it-anchor": "^5.0.2"
-  }
+    "markdown-it-anchor": "^5.0.2",
+    "netlify-shortener": "^1.0.3"
+  },
 }
